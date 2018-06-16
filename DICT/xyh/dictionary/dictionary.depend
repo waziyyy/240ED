@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1528963647 source:c:\users\ÏÄÓîº¼\desktop\dictionary\word.cpp
+	<iostream>
+	"Word.h"
+	<string>
+
+1528963658 c:\users\ÏÄÓîº¼\desktop\dictionary\word.h
+	<iostream>
+	<string>
+
+1529131531 source:c:\users\ÏÄÓîº¼\desktop\dictionary\main.cpp
+	<iostream>
+	<string>
+	"Word.h"
+	"TrieNode.h"
+	"Trie.h"
+
+1528965030 source:c:\users\ÏÄÓîº¼\desktop\dictionary\trienode.cpp
+	<iostream>
+	"TrieNode.h"
+	<string>
+
+1528964991 c:\users\ÏÄÓîº¼\desktop\dictionary\trienode.h
+	<iostream>
+	<string>
+	"Word.h"
+
+1529131570 source:c:\users\ÏÄÓîº¼\desktop\dictionary\trie.cpp
+	<iostream>
+	"Trie.h"
+	<string>
+	<string.h>
+
+1528966957 c:\users\ÏÄÓîº¼\desktop\dictionary\trie.h
+	<iostream>
+	<string>
+	"Word.h"
+	"TrieNode.h"
+
