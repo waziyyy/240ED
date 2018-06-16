@@ -1,4 +1,6 @@
 #include <iostream>
+#include<fstream>
+#include<cstdlib>
 #include "TrieNode.h"
 #include <string>
 

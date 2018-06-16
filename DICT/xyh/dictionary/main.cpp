@@ -7,10 +7,10 @@ using namespace std;
 
 int main()
 {
-    Trie df;
-    Word fg("sll","d","s");
-    Word fgl("-sllds","d","s");
-    df.InsertWord(fg);
-     df.InsertWord(fgl);
+    Trie first;
+
+    first.ReadData();
+
+    first.SearchWord();
     return 0;
 }

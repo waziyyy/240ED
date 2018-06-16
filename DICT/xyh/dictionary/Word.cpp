@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Word.h"
 #include <string>
+#include<fstream>
+#include<cstdlib>
 using namespace std;
 Word::Word()
 {
@@ -9,6 +11,12 @@ Word::Word()
     WordCharacter="";
 };
 Word::Word(string V,string C,string WC)
+{
+    Vocabulary=V;
+    Chinese=C;
+    WordCharacter=WC;
+};
+void Word::Set(string V,string C,string WC)
 {
     Vocabulary=V;
     Chinese=C;

@@ -1,10 +1,11 @@
 #ifndef TRIENODE_H
 #define TRIENODE_H
-
+#include<fstream>
 #include <iostream>
+#include<cstdlib>
 #include <string>
 #include "Word.h"
-#define NUM 26
+#define NUM 27
 using namespace std;
 class TrieNode
 {

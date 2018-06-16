@@ -1,38 +1,50 @@
 # depslib dependency file v1.0
-1528963647 source:c:\users\ÏÄÓîº¼\desktop\dictionary\word.cpp
+1529134571 source:c:\users\ÏÄÓîº¼\desktop\dictionary\word.cpp
 	<iostream>
 	"Word.h"
 	<string>
+	<fstream>
+	<cstdlib>
 
-1528963658 c:\users\ÏÄÓîº¼\desktop\dictionary\word.h
+1529134570 c:\users\ÏÄÓîº¼\desktop\dictionary\word.h
 	<iostream>
+	<fstream>
 	<string>
+	<cstdlib>
 
-1529131531 source:c:\users\ÏÄÓîº¼\desktop\dictionary\main.cpp
+1529135345 source:c:\users\ÏÄÓîº¼\desktop\dictionary\main.cpp
 	<iostream>
 	<string>
 	"Word.h"
 	"TrieNode.h"
 	"Trie.h"
 
-1528965030 source:c:\users\ÏÄÓîº¼\desktop\dictionary\trienode.cpp
+1529134571 source:c:\users\ÏÄÓîº¼\desktop\dictionary\trienode.cpp
 	<iostream>
+	<fstream>
+	<cstdlib>
 	"TrieNode.h"
 	<string>
 
-1528964991 c:\users\ÏÄÓîº¼\desktop\dictionary\trienode.h
+1529134922 c:\users\ÏÄÓîº¼\desktop\dictionary\trienode.h
+	<fstream>
 	<iostream>
+	<cstdlib>
 	<string>
 	"Word.h"
 
-1529131570 source:c:\users\ÏÄÓîº¼\desktop\dictionary\trie.cpp
+1529135345 source:c:\users\ÏÄÓîº¼\desktop\dictionary\trie.cpp
 	<iostream>
+	<fstream>
+	<cstdlib>
 	"Trie.h"
 	<string>
 	<string.h>
 
-1528966957 c:\users\ÏÄÓîº¼\desktop\dictionary\trie.h
+1529134552 c:\users\ÏÄÓîº¼\desktop\dictionary\trie.h
+	<fstream>
 	<iostream>
+	<cstdlib>
 	<string>
 	"Word.h"
 	"TrieNode.h"
