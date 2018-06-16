@@ -10,8 +10,9 @@ class Word
 {
 public:
     Word();//构造函数
-    Word(string V,string C,string WC);
+    Word(string V,string C,string WC);//构造函数的重载
     void Set(string V,string C,string WC);//设置单词的英文，中文，词性
+    void PrintWord();
     ~Word();//析构函数
     string Vocabulary;//英文单词
     string Chinese;//中文解释

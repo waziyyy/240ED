@@ -8,6 +8,7 @@ using namespace std;
 Trie::Trie()
 {
     pRoot=new TrieNode();//字典的根不存放字符
+    ReadData();//读入词典数据
 };
 Trie::~Trie()
 {
@@ -48,7 +49,7 @@ void Trie::InsertWord(Word str)
 };
 void Trie::SearchWord()
 {
-    cout<<"请输入您想要查询的单词"<<endl;
+    cout<<"请输入您想要查询的单词（模糊化搜索已关闭）"<<endl;
     string str;
     cin>>str;
     int index;
@@ -74,13 +75,65 @@ void Trie::SearchWord()
     }
     if (pLoc->HaveWord)//若单词存在，打印
     {
-        cout<<pLoc->TheWord.Vocabulary<<"   "<<pLoc->TheWord.Chinese<<"   "<<pLoc->TheWord.WordCharacter<<endl;
-        return;
+        pLoc->TheWord.PrintWord();
     }
     else    //若单词不存在，说明没有此单词
     {
         cout<<"单词不存在"<<endl;
             return;
+    }
+};
+void Trie::BlurSearch()
+{
+    cout<<"请输入您想要查询的单词（模糊化搜索已开启）"<<endl;
+    string str;
+    cin>>str;
+    int index;
+    TrieNode* pLoc =pRoot;
+    for (int i = 0;str[i];i++)
+    {
+        index = str[i] - 'a';
+        if((index < 0 || index > 25)&&(str[i] - '-'!=0))//若不是英文单词，报错
+        {
+            cout<<"你输入单词中有错误的字符"<<endl;
+            return;
+        }
+    if(str[i] - '-'==0)
+    {
+        index=26;
+    }
+        if (NULL == pLoc->NextBranch[index])//该单词的前缀不存在，说明没有此单词
+        {
+            cout<<"单词前缀不存在，模糊化搜索失败"<<endl;
+            return;
+        }
+        pLoc = pLoc->NextBranch[index];
+    }
+    if (pLoc->HaveWord)//若单词存在，打印
+    {
+        pLoc->TheWord.PrintWord();
+        return;
+    }
+    else    //若单词不存在，模糊化搜索
+    {
+        //打印以输入的字符为前缀，比其多一位的所有单词
+       /* cout<<"开始模糊化搜索"<<endl;
+        trienode* pblur =null;
+        for(int i=0;i<num;i++)
+        {
+            if(ploc->nextbranch[i]!=null)
+            {
+                pblur=ploc->nextbranch[i];
+                if(pblur->haveword)
+                    {
+                        pblur->theword.printword();
+                    }
+            }
+        }*/
+
+        //打印以输入字符为前缀的所有单词
+            PrintAll(pLoc);
+
     }
 };
 void Trie::Destroy(TrieNode* pRoot)
@@ -99,6 +152,8 @@ void Trie::Destroy(TrieNode* pRoot)
 void Trie::ReadData()
 {
     string V,C,WC;
+
+    int i=0;
     Word WordData;
     ifstream infile("dictionary.txt",ios::in);//以输入的方式打开文件
     if(!infile)
@@ -111,6 +166,23 @@ void Trie::ReadData()
         infile>>V>>C>>WC;
         WordData.Set(V,C,WC);
         InsertWord(WordData);
+        i++;
     }
     infile.close();
+    cout<<"词库共有"<<i<<"词"<<endl;
+};
+void Trie::PrintAll(TrieNode *p)
+{
+    if(p==NULL)
+    {
+        return;
+    }
+    if(p->HaveWord)
+    {
+        p->TheWord.PrintWord();
+    }
+    for(int i=0;i<NUM;i++)
+    {
+        PrintAll(p->NextBranch[i]);
+    }
 };

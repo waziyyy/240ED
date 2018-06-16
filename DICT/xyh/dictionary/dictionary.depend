@@ -1,18 +1,18 @@
 # depslib dependency file v1.0
-1529134571 source:c:\users\ÏÄÓîº¼\desktop\dictionary\word.cpp
+1529138466 source:c:\users\ÏÄÓîº¼\desktop\dictionary\word.cpp
 	<iostream>
 	"Word.h"
 	<string>
 	<fstream>
 	<cstdlib>
 
-1529134570 c:\users\ÏÄÓîº¼\desktop\dictionary\word.h
+1529138452 c:\users\ÏÄÓîº¼\desktop\dictionary\word.h
 	<iostream>
 	<fstream>
 	<string>
 	<cstdlib>
 
-1529135345 source:c:\users\ÏÄÓîº¼\desktop\dictionary\main.cpp
+1529138452 source:c:\users\ÏÄÓîº¼\desktop\dictionary\main.cpp
 	<iostream>
 	<string>
 	"Word.h"
@@ -33,7 +33,7 @@
 	<string>
 	"Word.h"
 
-1529135345 source:c:\users\ÏÄÓîº¼\desktop\dictionary\trie.cpp
+1529138494 source:c:\users\ÏÄÓîº¼\desktop\dictionary\trie.cpp
 	<iostream>
 	<fstream>
 	<cstdlib>
@@ -41,7 +41,7 @@
 	<string>
 	<string.h>
 
-1529134552 c:\users\ÏÄÓîº¼\desktop\dictionary\trie.h
+1529140149 c:\users\ÏÄÓîº¼\desktop\dictionary\trie.h
 	<fstream>
 	<iostream>
 	<cstdlib>

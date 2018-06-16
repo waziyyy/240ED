@@ -22,6 +22,10 @@ void Word::Set(string V,string C,string WC)
     Chinese=C;
     WordCharacter=WC;
 };
+void Word::PrintWord()
+{
+    cout<<Vocabulary<<"   "<<Chinese<<"   "<<WordCharacter<<endl;
+};
 Word::~Word()
 {
 

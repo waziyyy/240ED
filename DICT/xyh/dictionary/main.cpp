@@ -8,9 +8,9 @@ using namespace std;
 int main()
 {
     Trie first;
-
-    first.ReadData();
-
-    first.SearchWord();
+    while(1)
+    {
+       first.BlurSearch();
+    }
     return 0;
 }

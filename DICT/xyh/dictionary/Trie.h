@@ -11,12 +11,14 @@ class Trie
 public:
     Trie();
     ~Trie();
-    void InsertWord(Word str);
-    void SearchWord();
-    void ReadData();
+    void InsertWord(Word str);//为字典排序插入单词
+    void SearchWord();//搜索单词
+    void BlurSearch();//模糊化搜索
 private:
-    TrieNode* pRoot;
+    TrieNode* pRoot;//根节点
     void Destroy(TrieNode* pRoot);//销毁Trie树
+    void ReadData();//读入词典数据
+    void PrintAll(TrieNode* p);//打印此节点下的所有单词
 };
 
 
