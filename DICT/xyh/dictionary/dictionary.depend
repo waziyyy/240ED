@@ -12,7 +12,7 @@
 	<string>
 	<cstdlib>
 
-1529138452 source:c:\users\ÏÄÓîº¼\desktop\dictionary\main.cpp
+1529215715 source:c:\users\ÏÄÓîº¼\desktop\dictionary\main.cpp
 	<iostream>
 	<string>
 	"Word.h"
@@ -26,14 +26,14 @@
 	"TrieNode.h"
 	<string>
 
-1529134922 c:\users\ÏÄÓîº¼\desktop\dictionary\trienode.h
+1529216543 c:\users\ÏÄÓîº¼\desktop\dictionary\trienode.h
 	<fstream>
 	<iostream>
 	<cstdlib>
 	<string>
 	"Word.h"
 
-1529140349 source:c:\users\ÏÄÓîº¼\desktop\dictionary\trie.cpp
+1529215677 source:c:\users\ÏÄÓîº¼\desktop\dictionary\trie.cpp
 	<iostream>
 	<fstream>
 	<cstdlib>
@@ -41,7 +41,7 @@
 	<string>
 	<string.h>
 
-1529140149 c:\users\ÏÄÓîº¼\desktop\dictionary\trie.h
+1529215645 c:\users\ÏÄÓîº¼\desktop\dictionary\trie.h
 	<fstream>
 	<iostream>
 	<cstdlib>

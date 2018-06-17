@@ -5,7 +5,7 @@
 #include<cstdlib>
 #include <string>
 #include "Word.h"
-#define NUM 27
+#define NUM 29
 using namespace std;
 class TrieNode
 {

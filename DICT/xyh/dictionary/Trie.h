@@ -12,8 +12,10 @@ public:
     Trie();
     ~Trie();
     void InsertWord(Word str);//为字典排序插入单词
-    void SearchWord();//搜索单词
-    void BlurSearch();//模糊化搜索
+    void SearchWord();//搜索单词,内部输入单词
+    void SearchWord(string str);//搜索单词,外部传递单词
+    void BlurSearch();//模糊化搜索,内部输入单词
+    void BlurSearch(string str);//模糊化搜索,外部传递单词
 private:
     TrieNode* pRoot;//根节点
     void Destroy(TrieNode* pRoot);//销毁Trie树

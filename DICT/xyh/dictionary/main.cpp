@@ -7,10 +7,13 @@ using namespace std;
 
 int main()
 {
+    string a;
     Trie first;
     while(1)
     {
-       first.BlurSearch();
+        a="iI";
+       first.SearchWord("iIrish");
+       system("pause");
     }
     return 0;
 }
