@@ -11,8 +11,9 @@ int main()
     Trie first;
     while(1)
     {
-        a="iI";
-       first.SearchWord("iIrish");
+
+       first.BlurSearch();
+       first.SearchWord();
        system("pause");
     }
     return 0;
